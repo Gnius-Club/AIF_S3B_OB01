@@ -1,24 +1,238 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Sesión 1: De Usuario a Arquitecto de IoT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 1: De Usuario a Arquitecto de IoT</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Resumen para el Facilitador</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos de Aprendizaje:</strong>
+                                    <ul>
+                                        <li><strong>Conceptual:</strong> El estudiante comprenderá la visión de Gnius Club: pasar de ser un consumidor pasivo a un arquitecto activo de soluciones tecnológicas, con un enfoque específico en el Internet de las Cosas (IoT).</li>
+                                        <li><strong>Inspiracional:</strong> El estudiante se sentirá motivado al visualizar el poder de conectar el mundo físico y digital a través de ejemplos reales y profesionales de IoT y Gemelos Digitales.</li>
+                                        <li><strong>Técnico:</strong> El estudiante identificará las plataformas clave que utilizará durante el año (MakeCode/MicroPython, ThingSpeak) y comprenderá su rol dentro de un ecosistema IoT.</li>
+                                        <li><strong>Práctico:</strong> El estudiante creará exitosamente sus cuentas de usuario en las plataformas en la nube necesarias, estableciendo su "identidad de desarrollador".</li>
+                                    </ul>
+                                    <strong>Secuencia de la Sesión:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡Bienvenida e Inspiración: De Usuario a Arquitecto de IoT:</strong> (10 min)</li>
+                                        <li><strong class="tactic-highlight">⚡Tu Arsenal de Innovación: El Ecosistema IoT:</strong> (10 min)</li>
+                                        <li><strong class="tactic-highlight">⚡Forjando tu Identidad Digital: Registro en Plataformas:</strong> (20 min)</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Cuentas de usuario creadas y funcionales en la plataforma <strong>ThingSpeak</strong>.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable y de buena velocidad para todos los estudiantes.</li>
+                                        <li>Dispositivos (laptops/computadoras) para cada estudiante.</li>
+                                        <li>Presentación de diapositivas para la sesión.</li>
+                                        <li>URL directa a las páginas de registro de las plataformas.</li>
+                                        <li>Video inspiracional sobre IoT (pre-cargado para evitar buffering).</li>
+                                    </ul>
+                                    <strong>Preparación Previa del Facilitador:</strong>
+                                    <ol>
+                                        <li><strong>Verificación de Entorno:</strong> Confirma que todos los dispositivos de los estudiantes pueden acceder sin problemas a los sitios de registro (ThingSpeak, MakeCode). Ten un plan B por si la red de la escuela bloquea algo.</li>
+                                        <li><strong>Cuentas de Ejemplo:</strong> Ten tus propias cuentas listas en cada plataforma para poder guiar el proceso proyectando tu pantalla.</li>
+                                        <li><strong>Video Listo:</strong> Asegúrate de que el video inspiracional esté listo para reproducirse sin contratiempos.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Bienvenida e Inspiración: De Usuario a Arquitecto de IoT ⏰ 10 minutos</h2>
+                <p>Cambiar la mentalidad del estudiante. No es "otra clase de computación". Es la entrada a un campo profesional. Se debe establecer un tono de madurez, desafío y relevancia.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Estableciendo la Visión ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva de Bienvenida con el logo de Gnius Club y el título de la sesión)</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Buenos días a todos y bienvenidos a Gnius Club. Antes de empezar, quiero que piensen por un momento en todos los dispositivos 'inteligentes' que usan o de los que han oído hablar: desde un smartwatch que mide sus pasos, hasta asistentes como Alexa, o incluso autos que se conducen solos. La mayoría de nosotros interactuamos con esa tecnología como usuarios. La consumimos. Este año, eso va a cambiar radicalmente. Aquí, no van a aprender a *usar* la tecnología de otros. Van a aprender a *crearla*. La meta es que pasen de ser consumidores a ser arquitectos de soluciones. Vamos a explorar uno de los campos más importantes del futuro: el Internet de las Cosas, o IoT. Se trata de darle 'ojos', 'oídos' y 'voz' al mundo físico, conectando objetos cotidianos a la red para que nos puedan dar información y podamos controlarlos. Hablaremos de cómo crear 'Gemelos Digitales', una réplica virtual de un sistema real que podemos monitorear y analizar desde cualquier parte del mundo. Suena a ciencia ficción, pero es la tecnología que está redefiniendo industrias enteras ahora mismo.</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Visualizando el Impacto ⏰ 5 minutos</h3>
+                            <p>(Proyectar video inspiracional)</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">(antes del video): Para que tengan una idea más clara de lo que estamos hablando, quiero que vean esto. No es una película, son aplicaciones reales de IoT que están funcionando hoy, desde ciudades inteligentes que gestionan el tráfico solas hasta agricultura de precisión que optimiza cada gota de agua.</p>
+                                <p class="dialogue assistant">(Reproducir un video corto y dinámico que muestre ejemplos de IoT: una smart city, una fábrica automatizada, agricultura de precisión, monitoreo ambiental, etc.)</p>
+                                <p class="dialogue assistant">(después del video): Eso que acababan de ver es el poder de conectar datos, sensores y acciones. Es la capacidad de tomar decisiones basadas en información en tiempo real del mundo físico. Ese es el poder que ustedes van a empezar a construir este año. Bienvenidos al equipo de arquitectos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: Tu Arsenal de Innovación: El Ecosistema IoT ⏰ 10 minutos</h2>
+                <p>Ahora que están inspirados, es el momento de mostrarles las herramientas concretas. Se deben presentar como un "stack" o ecosistema profesional, no como programas aislados, para reforzar la idea de que están construyendo sistemas integrados.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Presentando el "Stack" Tecnológico ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva con los logos de Micro:bit, MicroPython, y ThingSpeak)</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Para construir estos sistemas, necesitan un conjunto de herramientas profesionales. Este es su arsenal, su 'stack' tecnológico para este año. Vamos a desglosarlo:</p>
+                                <p class="dialogue assistant"><strong>Hardware: Micro:bit y la placa IoTbit.</strong> Este es el cerebro físico de sus proyectos. Es un microcontrolador al que le conectaremos todo tipo de sensores: de temperatura, de movimiento, de humedad... Es el puente entre el mundo real y su código.</p>
+                                <p class="dialogue assistant"><strong>Lenguaje: MicroPython.</strong> Ya conocen la programación por bloques. Es excelente para empezar. Este año damos el salto a MicroPython. Es una versión de Python, uno de los lenguajes de programación más importantes del mundo, optimizada para hardware. Escribir en texto es como pasar de dibujar planos a escribir las especificaciones de ingeniería. Es el siguiente nivel.</p>
+                                <p class="dialogue assistant"><strong>Plataforma en la Nube: ThingSpeak.</strong> Aquí es donde la magia del 'Internet' en 'Internet de las Cosas' ocurre. ThingSpeak es una plataforma en la nube diseñada para recibir, almacenar y visualizar los datos que sus dispositivos recolectan. Sus sensores enviarán información aquí, y ustedes podrán verla en tiempo real en un dashboard, desde cualquier computadora o teléfono en el mundo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: El Flujo de Datos ⏰ 5 minutos</h3>
+                            <p>(Proyectar una diapositiva con un diagrama simple del flujo de datos: [Icono de Sensor] -> [Icono de Micro:bit con código] -> [Icono de WiFi] -> [Icono de Nube/ThingSpeak con gráficas] -> [Icono de Computadora/Dashboard])</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Entonces, ¿cómo funciona todo junto? El flujo es lógico. Imaginen que queremos construir un sistema que nos avise si la tierra de una planta está seca.</p>
+                                <p class="dialogue assistant"><strong>1. El sensor de humedad</strong>, conectado al Micro:bit, lee el estado de la tierra en el mundo físico.<br>
+                                <strong>2. Su código en MicroPython</strong> en el Micro:bit toma esa lectura.<br>
+                                <strong>3. Usando la placa IoTbit</strong>, el Micro:bit se conecta a internet vía WiFi y envía ese dato numérico a la nube.<br>
+                                <strong>4. ThingSpeak</strong> recibe el dato, lo guarda y lo muestra en una gráfica que ustedes diseñaron.<br>
+                                En ese momento, han creado con éxito un sistema IoT. Han conectado un objeto físico a internet para monitorearlo a distancia. Este es el ciclo fundamental que repetiremos y haremos cada vez más complejo a lo largo del año.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                 <h2>⚡ Actividad 3: Forjando tu Identidad Digital: Registro en Plataformas ⏰ 20 minutos</h2>
+                <p>Esta es la parte más práctica de la sesión. Es crucial enmarcarla no como una tarea administrativa, sino como el primer paso para construir su perfil como desarrolladores. El manejo debe ser metódico y paciente.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: La Importancia de tu Perfil ⏰ 2 minutos</h3>
+                            <p>Enmarcar la creación de cuentas como el primer paso profesional del estudiante.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Antes de empezar a construir, necesitamos preparar nuestro laboratorio digital. Esto implica crear las cuentas en las plataformas que usaremos. Y esto es más importante de lo que parece. A partir de hoy, cada proyecto que hagan, cada solución que diseñen, formará parte de su portafolio. Por eso, al crear estas cuentas, piensen en su identidad como desarrolladores. Usaremos sus correos institucionales y elegiremos nombres de usuario que suenen profesionales. Están construyendo su reputación desde ahora.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Registro Guiado en ThingSpeak ⏰ 10 minutos</h3>
+                            <p>(Proyectar la página de inicio de ThingSpeak. Guiar cada paso con la pantalla compartida.)</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">Perfecto. Todos abran su navegador y vayan a `thingspeak.com`. Lo haremos juntos, paso a paso, así que no se adelanten.</p>
+                                 <p class="dialogue assistant"><strong>Primero:</strong> Busquen el botón de 'Sign Up' o 'Crear Cuenta'.</p>
+                                 <p class="dialogue assistant"><strong>Segundo:</strong> Les pedirá una cuenta de MathWorks. Vamos a crear una. Utilicen su correo electrónico del colegio. Esto es importante para mantener todo organizado.</p>
+                                 <p class="dialogue assistant"><strong>Tercero:</strong> Cuando lleguen a la sección de nombre de usuario o 'User ID', piensen en algo simple y profesional. Una buena práctica es una combinación de su nombre y apellido, como `juan.perez` o `jperez_gnius`. Eviten apodos como 'gamerpro123'.</p>
+                                 <p class="dialogue assistant"><strong>Cuarto:</strong> Para la contraseña, por ahora, usaremos una estructura que les daré para que sea fácil si necesitan ayuda. Más adelante, en Ciudadanía Digital, hablaremos de cómo crear y gestionar contraseñas únicas y seguras.</p>
+                                 <p class="dialogue assistant"><strong>Quinto:</strong> Completen el resto de la información. Tendrán que ir a su correo electrónico para verificar la cuenta. Levanten la mano en cuanto reciban el correo y hagan clic en el enlace. No continúen hasta que todos estemos en ese punto.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Exploración Rápida de MakeCode ⏰ 8 minutos</h3>
+                            <p>Familiarizar a los estudiantes con su entorno de desarrollo de código.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Excelente! Ya tienen su base de operaciones en la nube lista. Ahora, vamos a abrir la herramienta donde escribiremos el código para el hardware. Vayan a `makecode.microbit.org`.</p>
+                                <p class="dialogue assistant">Como pueden ver, la gran ventaja aquí es que no se necesita cuenta. Pueden empezar un nuevo proyecto inmediatamente. Esto nos da mucha agilidad. Quiero que dediquen los próximos minutos a explorar la interfaz. Creen un nuevo proyecto, arrastren algunos bloques. Vean la sección de 'Avanzado'. Ahí es donde más adelante encontraremos las extensiones para nuestros sensores y para la placa de IoT. Solo quiero que se familiaricen con el entorno. Y si ven a la izquierda, hay un simulador del Micro:bit. Es una herramienta muy potente para probar su código antes de descargarlo al dispositivo real.</p>
+                                <p class="dialogue assistant">La próxima semana conectaremos este entorno con lo que acaban de crear en ThingSpeak. Por hoy, nuestro objetivo principal está cumplido. Tienen su espacio en la nube y conocen su entorno de desarrollo. Su laboratorio está oficialmente abierto.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
